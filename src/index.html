@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gsap animation</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <!-- heart -->
+        <div class="heart_container">
+            <img class="heart" src="./images/heart.png" alt="heart" />
+            <img class="heart" src="./images/heart.png" alt="heart" />
+            <img class="heart" src="./images/heart.png" alt="heart" />
+            <img class="heart" src="./images/heart.png" alt="heart" />
+            <img class="heart" src="./images/heart.png" alt="heart" />
+        </div>
+
+        <!-- background image-->
+        <div>
+            <img src="./images/bg.jpg" alt="bg" class="bg">
+        </div>
+
+        <!-- SCROLL -->
+        <div class="scroll">
+            &#x2193; Scrooll &#x2193;
+        </div>
+        
+        <!-- header -->
+        <header class="header">
+            <!-- menu -->
+            <nav class="menu">
+                <ul class="menu_list">
+                    <li class="menu_list_item">
+                        <a class="link" href="#about">About</a>
+                    </li>
+                    <li class="menu_list_item">
+                        <a class="link" href="#inspiration">Inspiration</a>
+                    </li>
+                    <li  class="menu_list_item">
+                        <a class="link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- SVG STAR -->
+        <section class="svg_star">
+            <svg
+                id="star"
+                width="231"
+                height="202"
+                viewBox="0 0 462 404"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path d="M68 399L222 7L287 161" stroke="#737071" stroke-width="10" />
+                <path d="M286 160L387 397L2 165" stroke="#737071" stroke-width="10" />
+                <path d="M4 165H453L70 397" stroke="#737071" stroke-width="10" />
+            </svg>
+        </section>
+
+        <section class="hero">
+            <h1 class="title">To be creative</h1> 
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section 
+            id="about"
+            class="about_container"
+        >
+        <img src="./images/about_background.png" alt="about_background" class="about_background">
+            <h1 class="about_title">About</h1>
+            <div class="about_content">
+                <img 
+                    src="./images/portrait.jpg" 
+                    alt="portrait"
+                    class="portrait"
+                />
+                <div class="about_text">
+                    <p>My name is Dmytro.</p>
+                    <p>I used GSAP animation in this project. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSPIRATION SECTION -->
+        <section id="inspiration" class="inspiration_container">
+            <img src="./images/insp_background.png" alt="inspiration_background" class="inspiration_background">
+            <!-- <div class="insp_content"> -->
+                <h3 class="inspiration_title">Inspiration</h3>
+                <!-- CARDS -->
+                <div class="cards_container">
+                    <div class="insp_img_container">
+                        <img src="./images/insp1.png" alt="insp1" class="insp_img"/>
+                    </div>
+                    <div class="insp_img_container">
+                        <img src="./images/insp2.png" alt="insp2" class="insp_img"/>
+                    </div>
+                    <div class="insp_img_container">
+                        <img src="./images/insp3.png" alt="insp3" class="insp_img"/>
+                    </div>
+                    <!-- //copy -->
+                    <div class="insp_img_container">
+                        <img src="./images/insp1.png" alt="insp1" class="insp_img"/>
+                    </div>
+                    <div class="insp_img_container">
+                        <img src="./images/insp2.png" alt="insp2" class="insp_img"/>
+                    </div>
+                    <div class="insp_img_container">
+                        <img src="./images/insp3.png" alt="insp3" class="insp_img"/>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </section>
+
+        <!-- CONTACTS SECTION -->
+        <section id="contacts" class="contacts_container">
+           <h4 class="contacts_title">CONTACTS</h4>
+            <div class="my_contacts_title">
+                My Links:
+                <a
+                    href="https://immastar.web.app/" 
+                    target="_blank"
+                    class="contact_link"
+                >Offical web site</a>
+                <a 
+                    href="https://www.linkedin.com/in/dmytro-aleks/" 
+                    target="_blank"
+                    class="contact_link"
+                >LinkedIn</a>
+            </div>
+            
+        </section>
+
+        <!-- BUTTON TO TOP -->
+        <section>
+            <button 
+            class="to-top-button"
+            onclick="toTop()"
+            >To top &#x2191</button>
+        </section>
+    </div>
+    <script src="script.js" type="module"></script>
+    <script>
+        function toTop() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+            })
+        }
+    </script>
+</body>
+</html>
